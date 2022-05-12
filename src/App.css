@@ -31,6 +31,12 @@
   text-decoration: line-through;
   color: green;
 }
+.delete{
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 @keyframes App-logo-spin {
   from {
