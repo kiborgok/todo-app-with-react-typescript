@@ -21,13 +21,13 @@ function App() {
       })
     );
   }
-  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setNewTodo((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
   }
-  function handleSubmit(e:React.FormEvent<HTMLFormElement>) {
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     setTodos((prevState) => [...prevState, { ...newTodo, id: todos.length }]);
   }
